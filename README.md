@@ -216,6 +216,7 @@ This document outlines the standard data format for representing PCN (process-ch
       /**
        * The problems field represents potential issues with the step.
        * @type {Array.<Object>}
+       * @optional
        */
       "problems": [
         {
