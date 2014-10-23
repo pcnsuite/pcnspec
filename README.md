@@ -4,27 +4,27 @@ This document outlines the standard data format for representing PCN (process-ch
 
 ## What is PCN analysis?
 
-[TODO](https://github.com/mjswensen/pcn-spec/issues/1)
-
 Process Chain Network (PCN) Analysis helps document, diagnose, and improve interactive business processes.  Dr. Scott Sampson, Professor of Service Operations and Business Management at Brigham Young University's Marriott School of Management, describes PCN Analysis as follows:
 
 "The purpose of PCN Analysis is to improve service business processes by systematically documenting the processes, assessing value coming from process components, identifying problem areas, and methodically generating process improvement alternatives.
 
-PCN Analysis begins by documenting an interactive business process.  This includes identifying which aspects of the process contribute to:
-        - customer value,
-        - customer costs (including psychological costs of effort, waiting, etc.)
-        - provider costs (labor or other resources),
-        - provider revenue potential,
-        - risks of process failure, including identifying potential causes of process failure.
+"PCN Analysis begins by documenting an interactive business process.  This includes identifying which aspects of the process contribute to:
 
-PCN Analysis evaluates the current process configuration and identifies means for process improvement.  THe goals of PCN Analysis include:
-        1. Provide a lean process that delivers maximum value at minimum costs.
-        2. Provide a robust process that has a low likelihood of failure even when faced with unusual customer variability.
-        3. Provide an agile process that efficiently and effectively accommodates varying customer needs, so that individual customers are neighter over-served nor under-served.
-        4. Provide a feasible process that can be implemented with the resources and skill sets of both the provider and the customers.
-        5. Provide an understandable process that can reasonably be communicated to employees and customers.
+* customer value,
+* customer costs (including psychological costs of effort, waiting, etc.),
+* provider costs (labor or other resources),
+* provider revenue potential,
+* risks of process failure, including identifying potential causes of process failure.
 
-In summary, PCN Analysis is a process diagramming technique coupled with principles and methods for analyzing processes and systematically identifying improvement opportunities.  PCN Analysis is founded in state-of-the-art science of service design based on the work of leading management researchers."
+"PCN Analysis evaluates the current process configuration and identifies means for process improvement.  The goals of PCN Analysis include:
+
+1. Provide a lean process that delivers maximum value at minimum costs.
+2. Provide a robust process that has a low likelihood of failure even when faced with unusual customer variability.
+3. Provide an agile process that efficiently and effectively accommodates varying customer needs, so that individual customers are neither over-served nor under-served.
+4. Provide a feasible process that can be implemented with the resources and skill sets of both the provider and the customers.
+5. Provide an understandable process that can reasonably be communicated to employees and customers.
+
+"In summary, PCN Analysis is a process diagramming technique coupled with principles and methods for analyzing processes and systematically identifying improvement opportunities.  PCN Analysis is founded in state-of-the-art science of service design based on the work of leading management researchers."
 
 Using this standard data format for representing data collected through PCN Analysis, business managers can better interpret the data with any array of products that implement this standard.  This will lead to better interactive business process designs.
 
