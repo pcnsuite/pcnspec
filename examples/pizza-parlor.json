@@ -3,7 +3,22 @@
   {
     "title": "Pizza Parlor PCN",
     "description": "This PCN represents the different interactions between a pizza restaurant and a customer.",
-    "author": "Morgan Young"
+    "creationDate": "",
+    "authors": 
+      [
+        {
+          "name":"Morgan Young",
+          "id":"GUID_1111",
+          "organization":"",
+          "site":""
+        },
+        {
+          "name":"Matt Swensen",
+          "id":"GUID_1112",
+          "organization":"",
+          "site":""
+        },
+      ]
   },
 
   "domains":
