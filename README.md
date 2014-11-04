@@ -215,11 +215,12 @@ For complete examples of the standard that use real-world data, please see the [
            * The type field identifies the region, and must be one of:
            * - "independent" - the independent processing region of the domain
            * - "surrogate" - one of the surrogate regions of the domain
-           * - "direct_TODO" - one of the direct interaction regions of the
+           * - "direct_leading" - one of the direct interaction regions of the
            *   domain, with preference to the domain's side of the region
-           * - "direct" - one of the direct interaction regions of the domain,
-           *   in the middle of the region
+           * - "direct_shared" - one of the direct interaction regions of the
+           *   domain, in the middle of the region
            * See the with_domain field below.
+           * @type {string}
            */
           "type": "",
 
