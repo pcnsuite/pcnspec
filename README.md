@@ -141,7 +141,8 @@ The steps field is where the substance of the analyzed process resides.
 
   /**
    * An optional boolean that indicates whether or not the process is
-   * relatively more significant.
+   * relatively more significant. If not defined, it is assumed to 
+   * be false.
    * @type {boolean}
    * @optional
    */
@@ -150,8 +151,11 @@ The steps field is where the substance of the analyzed process resides.
   /**
    * The value_specific field represents the value realization or value
    * potential that the specific beneficiary receives during the step. The
-   * value of this field must be an integer (may be negative).
+   * value of this field is optional and must be an integer (may be 
+   * negative). If not defined, it is assumed to be 0 (no or neutral value
+   * realization).
    * @type {number}
+   * @optional
    * @example 3 (much value realization or potential, perhaps represented by
    *   three smiley faces on a typical PCN diagram)
    * @example 0 (no or neutral value realization)
@@ -165,8 +169,10 @@ The steps field is where the substance of the analyzed process resides.
    * except that it represents the value potential or value realization of
    * the generic beneficiary instead of the specific beneficiary. Positive
    * values might be represented graphically by dollar signs, and negative
-   * values by dollar signs with negative symbols.
+   * values by dollar signs with negative symbols. This is an optional 
+   * field and if not defined, it is assumed to be 0.
    * @type {number}
+   * @optional
    */
   "value_generic": 0,
 
