@@ -33,7 +33,7 @@
       "predecessors": [],
       "domain":
       {
-        "id": "guid_customer_domain"",
+        "id": "guid_customer_domain",
         "region":
         {
           "type": "independent",
@@ -53,7 +53,7 @@
       "predecessors": [],
       "domain":
       {
-        "id": "guid_customer_domain"",
+        "id": "guid_customer_domain",
         "region":
         {
           "type": "surrogate",
@@ -305,8 +305,8 @@
           "id": "guid_step_8",
           "type": "normal_relationship",
           "title": ""
-        },
-	  ]
+        }
+	  ],
       "domain":
       {
         "id": "guid_customer_domain",
