@@ -148,7 +148,7 @@
         "id": "GUID_2345",
         "region":
         {
-          "type": "direct",
+          "type": "direct_leading",
           "with_domain": "GUID_1234"
         }
       },
