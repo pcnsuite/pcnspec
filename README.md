@@ -32,6 +32,10 @@ Using this standard data format for representing data collected through PCN Anal
 
 For complete examples of the standard that use real-world data, please see the [examples](https://github.com/mjswensen/pcn-spec/tree/master/examples) folder of this repository.
 
+## Validation
+
+A PCN Spec validation tool is separately developed and maintained at [pcnlint](https://github.com/brentjanderson/pcnlint). Use pcnlint to ensure JSON is proper according to this specification.
+
 ## Specification
 
 ### Top Level
