@@ -89,7 +89,7 @@ The domains field contains representations of the domains pertaining to the anal
 ```js
 {
   /**
-   * The id field should contain a unique identifier in string form.
+   * The id field should contain a document-unique identifier in string form.
    * @type {string}
    */
   "id": "",
@@ -121,7 +121,7 @@ The steps field is where the substance of the analyzed process resides.
 
 {
   /**
-   * A unique identifier for the step.
+   * A document-unique identifier for the step.
    * @type {string}
    */
   "id": "",
@@ -145,7 +145,7 @@ The steps field is where the substance of the analyzed process resides.
 
   /**
    * An optional boolean that indicates whether or not the process is
-   * relatively more significant. If not defined, it is assumed to 
+   * relatively more significant. If not defined, it is assumed to
    * be false.
    * @type {boolean}
    * @optional
@@ -155,7 +155,7 @@ The steps field is where the substance of the analyzed process resides.
   /**
    * The value_specific field represents the value realization or value
    * potential that the specific beneficiary receives during the step. The
-   * value of this field is optional and must be an integer (may be 
+   * value of this field is optional and must be an integer (may be
    * negative). If not defined, it is assumed to be 0 (no or neutral value
    * realization).
    * @type {number}
@@ -173,7 +173,7 @@ The steps field is where the substance of the analyzed process resides.
    * except that it represents the value potential or value realization of
    * the generic beneficiary instead of the specific beneficiary. Positive
    * values might be represented graphically by dollar signs, and negative
-   * values by dollar signs with negative symbols. This is an optional 
+   * values by dollar signs with negative symbols. This is an optional
    * field and if not defined, it is assumed to be 0.
    * @type {number}
    * @optional
@@ -192,7 +192,7 @@ The steps field is where the substance of the analyzed process resides.
   "predecessors": [
     {
       /**
-       * The identifier of the predecessor step.
+       * The document-unique identifier of the predecessor step.
        * @type {string}
        */
       "id": "",
@@ -225,7 +225,8 @@ The steps field is where the substance of the analyzed process resides.
   "domain": {
 
     /**
-     * The identifier of the domain that the step is associated with.
+     * The document-unique identifier of the domain that the step is associated
+     * with.
      * @type {string}
      */
     "id": "",
