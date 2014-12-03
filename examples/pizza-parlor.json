@@ -92,7 +92,7 @@
         "id": "GUID_1234",
         "region":
         {
-          "type": "direct_TODO",
+          "type": "direct_shared",
           "with_domain": "GUID_2345"
         }
       },
@@ -148,7 +148,7 @@
         "id": "GUID_2345",
         "region":
         {
-          "type": "direct",
+          "type": "direct_leading",
           "with_domain": "GUID_1234"
         }
       },
@@ -347,7 +347,7 @@
         "id": "GUID_1234",
         "region":
         {
-          "type": "direct_TODO",
+          "type": "direct_shared",
           "with_domain": "GUID_2345"
         }
       },
@@ -403,7 +403,7 @@
         "id": "GUID_1234",
         "region":
         {
-          "type": "direct_TODO",
+          "type": "direct_shared",
           "with_domain": "GUID_2345"
         }
       },
@@ -431,7 +431,7 @@
         "id": "GUID_2345",
         "region":
         {
-          "type": "direct_TODO",
+          "type": "direct_leading",
           "with_domain": "GUID_1234"
         }
       },
