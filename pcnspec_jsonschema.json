@@ -2,7 +2,7 @@
   "id": "1.0.0",
   "$schema": "http://json-schema.org/draft-04/schema#",
   "title": "PCN Spec",
-  "description": "Formal JSON-Schema of PCN Spec, usefull for validation of PCN documents",
+  "description": "Formal JSON-Schema of PCN Spec",
   "type": "object",
   "properties": {
     "metadata": {
