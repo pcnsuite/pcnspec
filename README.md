@@ -1,4 +1,4 @@
-# pcn-spec
+# pcnspec
 
 This document outlines the standard data format for representing PCN (process-chain-network) analysis.
 
@@ -30,11 +30,11 @@ Using this standard data format for representing data collected through PCN Anal
 
 ## Examples
 
-For complete examples of the standard that use real-world data, please see the [examples](https://github.com/mjswensen/pcn-spec/tree/master/examples) folder of this repository.
+For complete examples of the standard that use real-world data, please see the [examples](https://github.com/pcnsuite/pcnspec/tree/master/examples) folder of this repository.
 
 ## Validation
 
-A PCN Spec validation tool is separately developed and maintained at [pcnlint](https://github.com/brentjanderson/pcnlint). Use pcnlint to ensure JSON is proper according to this specification.
+A PCN Spec validation tool is separately developed and maintained at [pcnlint](https://github.com/pcnsuite/pcnlint). Use pcnlint to ensure JSON is proper according to this specification.
 
 ## Specification
 
@@ -70,13 +70,16 @@ A PCN Spec validation tool is separately developed and maintained at [pcnlint](h
 
   /**
    * The domains field contains representations of the domains pertaining to the
-   * analysis.
+   * analysis. See "Domain" section below for the format of the objects that
+   * populate this field.
    * @type {Array.<Object>}
    */
   "domains": [],
 
   /**
-   * The steps field is where the substance of the analyzed process resides.
+   * The steps field is where the substance of the analyzed process resides. See
+   * the "Steps" section below for the format of the objects that populate this
+   * field.
    * @type {Array.<Object>}
    */
   "steps": []
