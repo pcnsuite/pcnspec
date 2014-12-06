@@ -293,3 +293,10 @@ The steps field is where the substance of the analyzed process resides.
   ]
 }
 ```
+
+## Other PCN Software
+
+The following softwares adhere to the PCN Specification and offer user interfaces for conducting PCN audits or building PCN diagrams.
+
+* [buildmypcn](https://github.com/tgroshon/buildmypcn)
+* [pcn-audit](https://github.com/mjswensen/pcn-audit)
