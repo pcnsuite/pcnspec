@@ -1,0 +1,715 @@
+{
+  "metadata": {
+    "title": "Medical Diagnosis",
+    "industry": "Healthcare"
+  },
+  "domains": [
+    {
+      "id": "e46a2f2c-535c-2703-b461-4aa1204c659b",
+      "subtitle": "",
+      "title": "Health Clinic"
+    },
+    {
+      "id": "85bcec90-b7d9-1a2e-e0b1-415dcde30a3c",
+      "subtitle": "",
+      "title": "Patient"
+    },
+    {
+      "id": "85bcec90-b7d9-1a2e-e0b1-415dcde30a3d",
+      "subtitle": "",
+      "title": "Pharmacy"
+    },
+    {
+      "id": "e46a2f2c-535c-2703-b461-4aa1204c659a",
+      "subtitle": "",
+      "title": "Insurance Company"
+    }
+  ],
+  "steps": [
+    {
+      "id": "9f3678b6-635a-bcc2-6f35-0ab6a7f86ff4",
+      "title": "train staff on tools",
+      "type": "process",
+      "domain": {
+        "id": "e46a2f2c-535c-2703-b461-4aa1204c659b",
+        "region": {
+          "type": "independent",
+          "with_domain": "85bcec90-b7d9-1a2e-e0b1-415dcde30a3c"
+        }
+      },
+      "value_specific": 0,
+      "value_generic": 0,
+      "emphasized": false,
+      "predecessors": [
+        {
+          "id": "be240a7e-20c2-3a6f-f631-efdbe39f9b1f",
+          "type": "loose_temporal_relationship",
+          "title": ""
+        }
+      ],
+      "problems": []
+    },
+    {
+      "id": "be240a7e-20c2-3a6f-f631-efdbe39f9b1f",
+      "title": "procure lab tools",
+      "type": "process",
+      "domain": {
+        "id": "e46a2f2c-535c-2703-b461-4aa1204c659b",
+        "region": {
+          "type": "independent",
+          "with_domain": "85bcec90-b7d9-1a2e-e0b1-415dcde30a3c"
+        }
+      },
+      "value_specific": 0,
+      "value_generic": 0,
+      "emphasized": false,
+      "predecessors": [],
+      "problems": []
+    },
+    {
+      "id": "4649ffe0-2778-83d0-acd1-96f138801296",
+      "title": "clean lab tools",
+      "type": "process",
+      "domain": {
+        "id": "e46a2f2c-535c-2703-b461-4aa1204c659b",
+        "region": {
+          "type": "independent",
+          "with_domain": "85bcec90-b7d9-1a2e-e0b1-415dcde30a3c"
+        }
+      },
+      "value_specific": 0,
+      "value_generic": 0,
+      "emphasized": false,
+      "predecessors": [
+        {
+          "id": "be240a7e-20c2-3a6f-f631-efdbe39f9b1f",
+          "type": "loose_temporal_relationship",
+          "title": ""
+        }
+      ],
+      "problems": []
+    },
+    {
+      "id": "b4975365-ce9f-7a7f-dcbb-a2022e4d1359",
+      "title": "analyze culture",
+      "type": "divergent_process",
+      "domain": {
+        "id": "e46a2f2c-535c-2703-b461-4aa1204c659b",
+        "region": {
+          "type": "surrogate",
+          "with_domain": "85bcec90-b7d9-1a2e-e0b1-415dcde30a3c"
+        }
+      },
+      "value_specific": 0,
+      "value_generic": 0,
+      "emphasized": false,
+      "predecessors": [
+        {
+          "id": "9f3678b6-635a-bcc2-6f35-0ab6a7f86ff4",
+          "type": "loose_temporal_relationship",
+          "title": ""
+        },
+        {
+          "id": "4649ffe0-2778-83d0-acd1-96f138801296",
+          "type": "normal_relationship",
+          "title": ""
+        },
+        {
+          "id": "9bc776a3-5432-e606-e9bf-ca81c30dbb63",
+          "type": "normal_relationship",
+          "title": ""
+        }
+      ],
+      "problems": []
+    },
+    {
+      "id": "10a240c7-c10a-fcd9-330b-aaab260641dc",
+      "title": "call in prescription",
+      "type": "process",
+      "domain": {
+        "id": "e46a2f2c-535c-2703-b461-4aa1204c659b",
+        "region": {
+          "type": "surrogate",
+          "with_domain": "85bcec90-b7d9-1a2e-e0b1-415dcde30a3c"
+        }
+      },
+      "value_specific": 0,
+      "value_generic": 0,
+      "emphasized": false,
+      "predecessors": [
+        {
+          "id": "abe5d904-8671-8453-4def-f57442aeca5e",
+          "type": "normal_relationship",
+          "title": ""
+        }
+      ],
+      "problems": []
+    },
+    {
+      "id": "02f66b93-8886-02c4-8e55-81fabd690806",
+      "title": "submit payment claim",
+      "type": "process",
+      "domain": {
+        "id": "e46a2f2c-535c-2703-b461-4aa1204c659b",
+        "region": {
+          "type": "independent",
+          "with_domain": "e46a2f2c-535c-2703-b461-4aa1204c659a"
+        }
+      },
+      "value_specific": 0,
+      "value_generic": 0,
+      "emphasized": false,
+      "predecessors": [
+        {
+          "id": "b4975365-ce9f-7a7f-dcbb-a2022e4d1359",
+          "type": "normal_relationship",
+          "title": ""
+        },
+        {
+          "id": "10a240c7-c10a-fcd9-330b-aaab260641dc",
+          "type": "normal_relationship",
+          "title": ""
+        }
+      ],
+      "problems": []
+    },
+    {
+      "id": "e9166d92-434f-887c-2dc0-bbce57cfe2cc",
+      "title": "discuss symptoms",
+      "type": "process",
+      "domain": {
+        "id": "e46a2f2c-535c-2703-b461-4aa1204c659b",
+        "region": {
+          "type": "direct_shared",
+          "with_domain": "85bcec90-b7d9-1a2e-e0b1-415dcde30a3c"
+        }
+      },
+      "value_specific": 0,
+      "value_generic": 0,
+      "emphasized": false,
+      "predecessors": [
+        {
+          "id": "d2359181-237d-45ef-d274-fd73284046eb",
+          "type": "normal_relationship",
+          "title": ""
+        }
+      ],
+      "problems": []
+    },
+    {
+      "id": "9bc776a3-5432-e606-e9bf-ca81c30dbb63",
+      "title": "take throat culture",
+      "type": "process",
+      "domain": {
+        "id": "e46a2f2c-535c-2703-b461-4aa1204c659b",
+        "region": {
+          "type": "direct_shared",
+          "with_domain": "85bcec90-b7d9-1a2e-e0b1-415dcde30a3c"
+        }
+      },
+      "value_specific": 0,
+      "value_generic": 0,
+      "emphasized": false,
+      "predecessors": [
+        {
+          "id": "e9166d92-434f-887c-2dc0-bbce57cfe2cc",
+          "type": "normal_relationship",
+          "title": ""
+        }
+      ],
+      "problems": []
+    },
+    {
+      "id": "abe5d904-8671-8453-4def-f57442aeca5e",
+      "title": "report diagnosis",
+      "type": "process",
+      "domain": {
+        "id": "e46a2f2c-535c-2703-b461-4aa1204c659b",
+        "region": {
+          "type": "direct_shared",
+          "with_domain": "85bcec90-b7d9-1a2e-e0b1-415dcde30a3c"
+        }
+      },
+      "value_specific": 0,
+      "value_generic": 0,
+      "emphasized": false,
+      "predecessors": [
+        {
+          "id": "b4975365-ce9f-7a7f-dcbb-a2022e4d1359",
+          "type": "normal_relationship",
+          "title": ""
+        },
+        {
+          "id": "462b9732-3b82-c46a-e2c1-a8e4799dce94",
+          "type": "normal_relationship",
+          "title": ""
+        }
+      ],
+      "problems": []
+    },
+    {
+      "id": "d2359181-237d-45ef-d274-fd73284046eb",
+      "title": "wait for doctor",
+      "type": "wait",
+      "domain": {
+        "id": "85bcec90-b7d9-1a2e-e0b1-415dcde30a3c",
+        "region": {
+          "type": "surrogate",
+          "with_domain": "e46a2f2c-535c-2703-b461-4aa1204c659b"
+        }
+      },
+      "value_specific": 0,
+      "value_generic": 0,
+      "emphasized": false,
+      "predecessors": [
+        {
+          "id": "1744c08a-40c6-aab5-f3a4-fcbc2b2a4762",
+          "type": "normal_relationship",
+          "title": ""
+        }
+      ],
+      "problems": []
+    },
+    {
+      "id": "1744c08a-40c6-aab5-f3a4-fcbc2b2a4762",
+      "title": "check-in at kiosk",
+      "type": "process",
+      "domain": {
+        "id": "85bcec90-b7d9-1a2e-e0b1-415dcde30a3c",
+        "region": {
+          "type": "surrogate",
+          "with_domain": "e46a2f2c-535c-2703-b461-4aa1204c659b"
+        }
+      },
+      "value_specific": 0,
+      "value_generic": 0,
+      "emphasized": false,
+      "predecessors": [
+        {
+          "id": "09b8e071-6486-7f5a-5321-ca0377509da3",
+          "type": "normal_relationship",
+          "title": ""
+        }
+      ],
+      "problems": []
+    },
+    {
+      "id": "462b9732-3b82-c46a-e2c1-a8e4799dce94",
+      "title": "wait for results",
+      "type": "wait",
+      "domain": {
+        "id": "85bcec90-b7d9-1a2e-e0b1-415dcde30a3c",
+        "region": {
+          "type": "surrogate",
+          "with_domain": "e46a2f2c-535c-2703-b461-4aa1204c659b"
+        }
+      },
+      "value_specific": 0,
+      "value_generic": 0,
+      "emphasized": false,
+      "predecessors": [
+        {
+          "id": "9bc776a3-5432-e606-e9bf-ca81c30dbb63",
+          "type": "normal_relationship",
+          "title": ""
+        }
+      ],
+      "problems": []
+    },
+    {
+      "id": "73fc1015-0b4c-6048-766e-7c8679cb95a3",
+      "title": "have sore throat",
+      "type": "process",
+      "domain": {
+        "id": "85bcec90-b7d9-1a2e-e0b1-415dcde30a3c",
+        "region": {
+          "type": "independent",
+          "with_domain": "e46a2f2c-535c-2703-b461-4aa1204c659b"
+        }
+      },
+      "value_specific": 0,
+      "value_generic": 0,
+      "emphasized": false,
+      "predecessors": [],
+      "problems": []
+    },
+    {
+      "id": "09b8e071-6486-7f5a-5321-ca0377509da3",
+      "title": "to clinic",
+      "type": "process",
+      "domain": {
+        "id": "85bcec90-b7d9-1a2e-e0b1-415dcde30a3c",
+        "region": {
+          "type": "independent",
+          "with_domain": "e46a2f2c-535c-2703-b461-4aa1204c659b"
+        }
+      },
+      "value_specific": 0,
+      "value_generic": 0,
+      "emphasized": false,
+      "predecessors": [
+        {
+          "id": "73fc1015-0b4c-6048-766e-7c8679cb95a3",
+          "type": "normal_relationship",
+          "title": ""
+        }
+      ],
+      "problems": []
+    },
+    {
+      "id": "1107909b-cc7a-788b-72ae-d78a11435b7c",
+      "title": "drive to pharmacy",
+      "type": "process",
+      "domain": {
+        "id": "85bcec90-b7d9-1a2e-e0b1-415dcde30a3c",
+        "region": {
+          "type": "independent",
+          "with_domain": "e46a2f2c-535c-2703-b461-4aa1204c659b"
+        }
+      },
+      "value_specific": 0,
+      "value_generic": 0,
+      "emphasized": false,
+      "predecessors": [
+        {
+          "id": "462b9732-3b82-c46a-e2c1-a8e4799dce94",
+          "type": "normal_relationship",
+          "title": ""
+        }
+      ],
+      "problems": []
+    },
+    {
+      "id": "12ccccce-c14b-4385-ae4a-a2dd3155719e",
+      "title": "take medication",
+      "type": "process",
+      "domain": {
+        "id": "85bcec90-b7d9-1a2e-e0b1-415dcde30a3c",
+        "region": {
+          "type": "independent",
+          "with_domain": "e46a2f2c-535c-2703-b461-4aa1204c659b"
+        }
+      },
+      "value_specific": 0,
+      "value_generic": 0,
+      "emphasized": false,
+      "predecessors": [
+        {
+          "id": "8e297ec8-a96b-01e4-22a1-c688fb2f6d29",
+          "type": "normal_relationship",
+          "title": ""
+        }
+      ],
+      "problems": []
+    },
+    {
+      "id": "ec9fe0ec-ef65-f6fb-74da-0177afac4494",
+      "title": "feel better",
+      "type": "process",
+      "domain": {
+        "id": "85bcec90-b7d9-1a2e-e0b1-415dcde30a3c",
+        "region": {
+          "type": "independent",
+          "with_domain": "e46a2f2c-535c-2703-b461-4aa1204c659b"
+        }
+      },
+      "value_specific": 0,
+      "value_generic": 0,
+      "emphasized": false,
+      "predecessors": [
+        {
+          "id": "12ccccce-c14b-4385-ae4a-a2dd3155719e",
+          "type": "normal_relationship",
+          "title": ""
+        }
+      ],
+      "problems": []
+    },
+    {
+      "id": "390fdace-19f6-4d38-d175-e5dc56c2ed99",
+      "title": "show ID",
+      "type": "process",
+      "domain": {
+        "id": "85bcec90-b7d9-1a2e-e0b1-415dcde30a3c",
+        "region": {
+          "type": "direct_shared",
+          "with_domain": "85bcec90-b7d9-1a2e-e0b1-415dcde30a3d"
+        }
+      },
+      "value_specific": 0,
+      "value_generic": 0,
+      "emphasized": false,
+      "predecessors": [
+        {
+          "id": "1107909b-cc7a-788b-72ae-d78a11435b7c",
+          "type": "normal_relationship",
+          "title": ""
+        }
+      ],
+      "problems": []
+    },
+    {
+      "id": "d21f5360-71f6-7f75-de1b-c8c4ac310d8b",
+      "title": "check ID",
+      "type": "process",
+      "domain": {
+        "id": "85bcec90-b7d9-1a2e-e0b1-415dcde30a3c",
+        "region": {
+          "type": "direct_shared",
+          "with_domain": "85bcec90-b7d9-1a2e-e0b1-415dcde30a3d"
+        }
+      },
+      "value_specific": 0,
+      "value_generic": 0,
+      "emphasized": false,
+      "predecessors": [
+        {
+          "id": "390fdace-19f6-4d38-d175-e5dc56c2ed99",
+          "type": "normal_relationship",
+          "title": ""
+        }
+      ],
+      "problems": []
+    },
+    {
+      "id": "deaea5b4-f34a-e33d-48f2-010e5ca5ddd0",
+      "title": "tell copay amount",
+      "type": "process",
+      "domain": {
+        "id": "85bcec90-b7d9-1a2e-e0b1-415dcde30a3c",
+        "region": {
+          "type": "direct_shared",
+          "with_domain": "85bcec90-b7d9-1a2e-e0b1-415dcde30a3d"
+        }
+      },
+      "value_specific": 0,
+      "value_generic": 0,
+      "emphasized": false,
+      "predecessors": [
+        {
+          "id": "957f056b-e43a-917c-c39e-196e5b3966b0",
+          "type": "normal_relationship",
+          "title": ""
+        }
+      ],
+      "problems": []
+    },
+    {
+      "id": "8e297ec8-a96b-01e4-22a1-c688fb2f6d29",
+      "title": "give payment",
+      "type": "process",
+      "domain": {
+        "id": "85bcec90-b7d9-1a2e-e0b1-415dcde30a3c",
+        "region": {
+          "type": "direct_shared",
+          "with_domain": "85bcec90-b7d9-1a2e-e0b1-415dcde30a3d"
+        }
+      },
+      "value_specific": 0,
+      "value_generic": 0,
+      "emphasized": false,
+      "predecessors": [
+        {
+          "id": "deaea5b4-f34a-e33d-48f2-010e5ca5ddd0",
+          "type": "normal_relationship",
+          "title": ""
+        }
+      ],
+      "problems": []
+    },
+    {
+      "id": "019234c2-cbf2-7367-83e4-5591c7b78532",
+      "title": "pay covered amount",
+      "type": "process",
+      "domain": {
+        "id": "e46a2f2c-535c-2703-b461-4aa1204c659a",
+        "region": {
+          "type": "surrogate",
+          "with_domain": "e46a2f2c-535c-2703-b461-4aa1204c659b"
+        }
+      },
+      "value_specific": 0,
+      "value_generic": 0,
+      "emphasized": false,
+      "predecessors": [
+        {
+          "id": "8da17624-e721-db71-bd42-41317f562bc3",
+          "type": "normal_relationship",
+          "title": ""
+        }
+      ],
+      "problems": []
+    },
+    {
+      "id": "8da17624-e721-db71-bd42-41317f562bc3",
+      "title": "review claim",
+      "type": "process",
+      "domain": {
+        "id": "e46a2f2c-535c-2703-b461-4aa1204c659a",
+        "region": {
+          "type": "surrogate",
+          "with_domain": "e46a2f2c-535c-2703-b461-4aa1204c659b"
+        }
+      },
+      "value_specific": 0,
+      "value_generic": 0,
+      "emphasized": false,
+      "predecessors": [
+        {
+          "id": "63d67010-01e6-a165-2acc-f84c34bad5b5",
+          "type": "normal_relationship",
+          "title": ""
+        },
+        {
+          "id": "cd649b17-5dfb-6459-ceed-3ec73419bdfa",
+          "type": "loose_temporal_relationship",
+          "title": ""
+        }
+      ],
+      "problems": []
+    },
+    {
+      "id": "cd649b17-5dfb-6459-ceed-3ec73419bdfa",
+      "title": "develop payment schedule",
+      "type": "divergent_process",
+      "domain": {
+        "id": "e46a2f2c-535c-2703-b461-4aa1204c659a",
+        "region": {
+          "type": "independent",
+          "with_domain": "85bcec90-b7d9-1a2e-e0b1-415dcde30a3c"
+        }
+      },
+      "value_specific": 0,
+      "value_generic": 0,
+      "emphasized": false,
+      "predecessors": [],
+      "problems": []
+    },
+    {
+      "id": "cf141349-c766-dd06-a0de-c3be09d8d96c",
+      "title": "establish medication coverage agreement",
+      "type": "process",
+      "domain": {
+        "id": "e46a2f2c-535c-2703-b461-4aa1204c659a",
+        "region": {
+          "type": "independent",
+          "with_domain": "85bcec90-b7d9-1a2e-e0b1-415dcde30a3d"
+        }
+      },
+      "value_specific": 0,
+      "value_generic": 0,
+      "emphasized": false,
+      "predecessors": [
+        {
+          "id": "cd649b17-5dfb-6459-ceed-3ec73419bdfa",
+          "type": "loose_temporal_relationship",
+          "title": ""
+        }
+      ],
+      "problems": []
+    },
+    {
+      "id": "60406d38-050e-eac2-c2ea-021e55b73bee",
+      "title": "process payment",
+      "type": "process",
+      "domain": {
+        "id": "e46a2f2c-535c-2703-b461-4aa1204c659a",
+        "region": {
+          "type": "independent",
+          "with_domain": "85bcec90-b7d9-1a2e-e0b1-415dcde30a3d"
+        }
+      },
+      "value_specific": 0,
+      "value_generic": 0,
+      "emphasized": false,
+      "predecessors": [
+        {
+          "id": "63d67010-01e6-a165-2acc-f84c34bad5b5",
+          "type": "normal_relationship",
+          "title": ""
+        }
+      ],
+      "problems": []
+    },
+    {
+      "id": "63d67010-01e6-a165-2acc-f84c34bad5b5",
+      "title": "submit payment claim",
+      "type": "process",
+      "domain": {
+        "id": "85bcec90-b7d9-1a2e-e0b1-415dcde30a3d",
+        "region": {
+          "type": "independent",
+          "with_domain": "e46a2f2c-535c-2703-b461-4aa1204c659a"
+        }
+      },
+      "value_specific": 0,
+      "value_generic": 0,
+      "emphasized": false,
+      "predecessors": [
+        {
+          "id": "957f056b-e43a-917c-c39e-196e5b3966b0",
+          "type": "normal_relationship",
+          "title": ""
+        }
+      ],
+      "problems": []
+    },
+    {
+      "id": "3b48a9de-ffa5-cfe1-7288-577e38ad8cf2",
+      "title": "fill prescription",
+      "type": "process",
+      "domain": {
+        "id": "85bcec90-b7d9-1a2e-e0b1-415dcde30a3d",
+        "region": {
+          "type": "surrogate",
+          "with_domain": "85bcec90-b7d9-1a2e-e0b1-415dcde30a3c"
+        }
+      },
+      "value_specific": 0,
+      "value_generic": 0,
+      "emphasized": false,
+      "predecessors": [
+        {
+          "id": "10a240c7-c10a-fcd9-330b-aaab260641dc",
+          "type": "normal_relationship",
+          "title": ""
+        },
+        {
+          "id": "d21f5360-71f6-7f75-de1b-c8c4ac310d8b",
+          "type": "normal_relationship",
+          "title": ""
+        }
+      ],
+      "problems": []
+    },
+    {
+      "id": "957f056b-e43a-917c-c39e-196e5b3966b0",
+      "title": "check coverage",
+      "type": "process",
+      "domain": {
+        "id": "85bcec90-b7d9-1a2e-e0b1-415dcde30a3d",
+        "region": {
+          "type": "surrogate",
+          "with_domain": "85bcec90-b7d9-1a2e-e0b1-415dcde30a3c"
+        }
+      },
+      "value_specific": 0,
+      "value_generic": 0,
+      "emphasized": false,
+      "predecessors": [
+        {
+          "id": "cf141349-c766-dd06-a0de-c3be09d8d96c",
+          "type": "normal_relationship",
+          "title": ""
+        },
+        {
+          "id": "3b48a9de-ffa5-cfe1-7288-577e38ad8cf2",
+          "type": "normal_relationship",
+          "title": ""
+        }
+      ],
+      "problems": []
+    }
+  ]
+}
+                    
