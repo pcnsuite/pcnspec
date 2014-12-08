@@ -34,7 +34,11 @@ For complete examples of the standard that use real-world data, please see the [
 
 ## Validation
 
+### PCN Lint
 A PCN Spec validation tool is separately developed and maintained at [pcnlint](https://github.com/pcnsuite/pcnlint). Use pcnlint to ensure JSON is proper according to this specification.
+
+### JSON Schema
+Use the pcnspec_jsonschema.json file to validate a PCN Spec document with any of the many [JSON Schema validators](http://json-schema.org/implementations.html) available.
 
 ## Specification
 
